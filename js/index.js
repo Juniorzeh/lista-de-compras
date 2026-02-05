@@ -44,5 +44,13 @@ botaoAdicionar.addEventListener("click", (evento) => {
 
     listaDeCompras.appendChild(itemDaLista);
 
+    inputCheckbox.addEventListener("click", function(){
+        if (inputCheckbox.checked){
+            nomeitem.style.textDecoration = "line-through";
+        }else{
+            nomeitem.style.textDecoration = "none";
+        }
+    });
+
     
 })
